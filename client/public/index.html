@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="msvalidate.01" content="3324380C6230BDF95C5641CF2392BA48" /> 
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta  name="description"  content="Web site created using create-react-app" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+
+    <link rel="stylesheet" href="/assets/css/reset.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/dist/checkbox.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="/assets/css/aftercatalog.css">
+    <link rel="stylesheet" href="/assets/css/catalog.css">
+    <link rel="stylesheet" href="/assets/css/aboutus.css"> 
+    <link rel="stylesheet" href="/assets/css/contact.css"> 
+   
+
+    <title>Vip Tires</title>
+  </head>
+  <body>
+   <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+
+
+
+    </div> 
+ 
+    <script type="text/javascript">
+      window.addEventListener('load', function() {
+         // Slider configuration
+var config = {
+    speed: 3000,
+    auto: true, // true or false
+    arrows: true, // true or false
+    nav: true, // true or false
+    navStyle: 'default' // square,rectangle, default
+  };
+  
+  // Slider core
+  var slides = $('.slide');
+  var totalSlides = slides.length;
+  var currentIndex = 0;
+  
+  function setSlides() {
+    var currentSlide = slides.eq(currentIndex);
+    slides.hide();
+    currentSlide.fadeIn(1500);
+  };
+  setSlides();
+  
+  // autoplay
+  if (config.auto) {
+    var autoSlide = setInterval(function() {
+      currentIndex += 1;
+      if (currentIndex > totalSlides - 1) {
+        currentIndex = 0;
+      }
+      setSlides();
+      navigation();
+    }, config.speed);
+  };
+  
+  // navigation arrows
+  if (config.arrows) {
+    $('.arrow').addClass('active');
+    $('.prev').click(function() {
+      clearInterval(autoSlide);
+      currentIndex -= 1;
+      if (currentIndex < 0) {
+        currentIndex = totalSlides - 1;
+      }
+      navigation();
+      setSlides();
+    });
+    $('.next').click(function() {
+      clearInterval(autoSlide);
+      currentIndex += 1;
+      if (currentIndex > totalSlides - 1) {
+        currentIndex = 0;
+      }
+      navigation();
+      setSlides();
+    });
+  };
+  
+  // navigation
+  if (config.nav) {
+      for (i = 0; i < slides.length; i+=1) {
+        $('<li/>').attr( {'class': 'nav-item','id': i}).appendTo('.slide-nav');
+      };
+    $('.nav-item').first().addClass('item-active');
+    switch(config.navStyle) { // navigation style
+      case 'square':
+          $('.nav-item').addClass('square');
+          break;
+      case 'rectangle':
+          $('.nav-item').addClass('rectangle');
+          break;
+      default:
+          $('.nav-item').addClass('dot');
+    };
+    function navigation() {
+      $('.nav-item').removeClass('item-active');
+      $('.nav-item').eq(currentIndex).addClass('item-active');
+    };
+      $('.nav-item').click(function() {
+        clearInterval(autoSlide);
+        var navNumb =  $(this).attr('id');
+        currentIndex = navNumb;
+        navigation();
+        setSlides();
+    });
+  };
+      });
+  </script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+    <script src="/assets/js/brands.js"></script> 
+    <script src="/assets/js/navbar.js"></script>
+   
+  
+
+  </body>
+</html>

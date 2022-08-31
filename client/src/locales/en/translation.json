@@ -1,0 +1,110 @@
+{
+    "language": {
+        "main" : {
+            "lang": "English",
+            "img" : "https://cdn0.iconfinder.com/data/icons/flags-of-the-world-2/128/united-states-3-256.png"
+        },
+        "dropdown": {
+            "first": {
+                "lang": "ქართული",
+                "img" : "https://cdn2.iconfinder.com/data/icons/world-flag-7/64/26-128.png",
+                "change_to": "ge"
+            },
+            "second": {
+                "lang": "русский",
+                "img" : "https://cdn2.iconfinder.com/data/icons/flags/flags/48/Russian-Federation.png",
+                "change_to": "ru"
+            }
+        }
+    }, 
+    "Header": {
+        "Home": "Home",
+        "Catalog": "Catalog",
+        "About": "About ",
+        "Contact": "Contact",
+        "Email": "E-mail", 
+        "WorkingHours": "Working hours",
+        "Everyday": "Everyday",
+        "CallUs": "Call Us"
+    },
+    "Footer": {
+        "Home": "Home",
+        "Catalog": "Catalog",
+        "About": "About ",
+        "Contact": "Contact",
+        "Map": "Site Map",
+        "Contact_footer": "Contact ",
+        "Address": "67 Godziashvili St, Tbilisi",
+        "Copyright": "All rights reserved" 
+    },
+    "Homepage": {
+        "Slider_text1": "We are the official representatives of Maxtrek and Bearway in Georgia",
+        "Slider_text2": "",
+        "Slider_text3": "",
+        "Catalog":"Catalog",
+        "part1_title": "Why us",
+        "part1_text1": "Comfort & Safety",
+        "part1_text2": "We care about your safety and comfort",
+        "part2_title" :"Quality & Availability",
+        "part2_text": "We are constantly monitoring the quality of our products",
+        "Insale": "Discounted",
+        "Sale": "Sale",
+        "Brand": "Brand",
+        "Size": "Size",
+        "Season": "Season",
+        "part3_text1":"A new container opens",
+        "part3_text2":"Tbilisi Vashlijvari",
+        "part4_text1":"New tires at the best price",
+        "part4_text2":"Tbilisi Vashlijvari",
+        "part5_text1":"Secondary tires arrived from Germany",
+        "part5_text2":"Tbilisi Vashlijvari" 
+    },
+    "ContactPage":{
+        "CallUs": "Call Us",
+        "OurLocation": "Our Address",
+        "Address1": "Tbilisi",
+        "Address2": "67 Godziashvili St." ,
+        "Support": "24/7 Support"
+    },
+    "AboutusPage":{
+        "About1": "We are one",
+        "About2": "Leading company since 2008",
+        "About3": "We are the official representatives of Maxtrek and Bearway in Georgia and sell their new products, as well as second-hand tires from other brands throughout Georgia. We have 12 years of successful experience in this field, we are developing every day and opening new branches. We are direct importers of products, so we constantly strive to maintain an ideal balance of quality and price in both retail and wholesale.",
+        "About4": "We understand that our success depends on customer satisfaction",
+        "About5": "The lowest prices in Georgia",
+        "About6": "Constant care for quality and your safety",
+        "About7": "Satisfied customer is our guarantee of stable work",
+        "About8": "Contact" 
+    }, 
+    "CatalogPage": {
+        "Filter_title":  "Find the tire you are looking for",
+        "size": "Size",
+        "season": "Season",
+        "summer": "Summer",
+        "winter": "Winter",
+        "universal" : "Universal",
+        "diameter": "Diameter",
+        "width": "Width",
+        "height": "Height",
+        "search": "Search",
+        "catalog": "Catalog",
+        "sale": "Sale",
+        "brand": "Brand",
+        "milimeter": "mm",
+        "noPrice": "Price negotiable"
+    },
+    "Messages": {
+        "noProductsErrMessage":"Similar products not found, Please try again later",
+        "apiError1Message": "Products not found, please try again later",
+        "apiError2Message": "Failed to connect to database, please try again later"
+    },
+    "Images": {
+        "secondary": "used_en"
+    }
+    
+  
+
+   
+
+
+}

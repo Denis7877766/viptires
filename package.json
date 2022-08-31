@@ -1,0 +1,35 @@
+{
+  "name": "tires",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "client": "npm start --prefix client",
+    "server": "node server.js",
+    "start-test": "concurrently \"node server.js test\" \"npm run client\" ",
+    "start": "concurrently \"npm run server\" \"npm run client\" ",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.2.0",
+    "axios": "^0.27.2",
+    "cloudinary": "^1.23.0",
+    "concurrently": "^5.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-validator": "^6.3.1",
+    "force-ssl-heroku": "^1.0.2",
+    "heroku": "^7.3.0",
+    "http-proxy-middleware": "^0.21.0",
+    "js-sha256": "^0.9.0",
+    "moment": "^2.27.0",
+    "mongoose": "^5.8.11",
+    "react-messenger-customer-chat": "^0.8.0",
+    "url-validator": "^2.0.3",
+    "uuid": "^3.4.0"
+  }
+}
